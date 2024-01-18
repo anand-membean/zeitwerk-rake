@@ -11,6 +11,8 @@ module ZeitwerkRake
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
+    config.paths.add Rails.root.join('lib').to_s, auto_load: true, eager_load: true
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
